@@ -1,0 +1,153 @@
+<!DOCTYPE html>
+<html lang="es">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+    <title>Reserva</title>
+  </head>
+
+  <body>
+    <main>
+      <h1>RESERVA</h1>
+      <form class="formulario" action="registro.php" method="POST">
+        <fieldset class="personal">
+          <legend>Datos Personales</legend>
+          <div>
+            <label for="nombre">Nombre</label>
+            <input type="text" id="nombre" name="nombre" />
+          </div>
+          <div>
+            <label for="apellidos">Apellidos</label>
+            <input type="text" id="apellidos" name="apellidos" />
+          </div>
+          <div>
+            <label for="telefono">Teléfono de contacto</label>
+            <input type="text" id="telefono" name="telefono" />
+          </div>
+          <div>
+            <label for="email">Correo electrónico</label>
+            <input type="text" id="email" name="email" />
+          </div>
+        </fieldset>
+
+        <fieldset class="reserva">
+          <legend>Reserva</legend>
+          <label for="noches">Número de noches</label>
+          <input type="text" id="noches" name="noches" />       
+
+        <fieldset class="fecha">
+          <legend>Fecha de entrada</legend>
+          <label for="dia">Día</label>
+          <select id="dia" name="dia">
+            <option disabled selected>Día</option>
+            <option value="1">1</option>
+            <option value="2">2</option>
+            <option value="3">3</option>
+            <option value="4">4</option>
+            <option value="5">5</option>
+            <option value="6">6</option>
+            <option value="7">7</option>
+            <option value="8">8</option>
+            <option value="9">9</option>
+            <option value="10">10</option>
+            <option value="11">11</option>
+            <option value="12">12</option>
+            <option value="13">13</option>
+            <option value="14">14</option>
+            <option value="15">15</option>
+            <option value="16">16</option>
+            <option value="17">17</option>
+            <option value="18">18</option>
+            <option value="19">19</option>
+            <option value="20">20</option>
+            <option value="21">21</option>
+            <option value="22">22</option>
+            <option value="23">23</option>
+            <option value="24">24</option>
+            <option value="25">25</option>
+            <option value="26">26</option>
+            <option value="27">27</option>
+            <option value="28">28</option>
+            <option value="29">29</option>
+            <option value="30">30</option>
+            <option value="31">31</option>
+          </select>
+
+          <label for="mes">Mes</label>
+          <select id="mes" name="mes">
+            <option disabled selected>Mes</option>
+            <option value="Enero">Enero</option>
+            <option value="Febrero">Febrero</option>
+            <option value="Marzo">Marzo</option>
+            <option value="Abril">Abril</option>
+            <option value="Mayo">Mayo</option>
+            <option value="Junio">Junio</option>
+            <option value="Julio">Julio</option>
+            <option value="Agosto">Agosto</option>
+            <option value="Septiembre">Septiembre</option>
+            <option value="Octubre">Octubre</option>
+            <option value="Noviembre">Noviembre</option>
+            <option value="Diciembre">Diciembre</option>
+          </select>
+
+          <label for="año">Año</label>
+          <select id="año" name="año">
+            <option disabled selected>Año</option>
+            <option value="2023">2023</option>
+            <option value="2024">2024</option>
+            <option value="2025">2025</option>
+            <option value="2026">2026</option>
+          </select>
+        </fieldset>
+
+        <fieldset class="habitación">
+          <legend>Habitación</legend>
+          <div class="lista-opciones">
+            <div class="opcion">
+              <input type="radio" name="tipo-habitacion" id="tipo-habitacion" />
+              <label for="tipo-habitacion">Simple</label>
+            </div>
+            <div class="opcion">
+              <input type="radio" name="tipo-habitacion" id="tipo-habitacion" />
+              <label for="tipo-habitacion">Doble</label>
+            </div>
+            <div class="opcion">
+              <input type="radio" name="tipo-habitacion" id="tipo-habitacion" />
+              <label for="tipo-habitacion">Matrimonio</label>
+            </div>
+            <div class="cama-supletoria">
+              <input type="checkbox" name="supletoria" id="supletoria" />
+              <label for="supletoria">Cama supletoria</label>
+            </div>
+          </div>
+        </fieldset>
+
+        <fieldset class="comida">
+            <legend>Comidas</legend>
+            <div class="lista-opciones">
+                <div class="opciones">
+                    <input type="checkbox" name="desayuno" id="desayuno" />
+                    <label for="desayuno">Desayuno</label>
+                </div>
+                <div class="opciones">
+                    <input type="checkbox" name="comida" id="comida" />
+                    <label for="comida">Comida</label>
+                </div>
+                <div class="opciones">
+                    <input type="checkbox" name="cena" id="cena" />
+                    <label for="cena">Cena</label>
+                </div>
+            </div>
+        </fieldset>
+
+        <label for="comentarios">Comentarios</label>
+        <textarea class="comentarios" name="comentarios" id="comentarios" cols="30" rows="10"></textarea>        
+
+        <input class="boton-enviar" type="submit" value="enviar" />
+        <input class="boton-limpiar" type="reset" value="limpiar formulario" />
+        </fieldset>
+      </form>
+    </main>
+  </body>
+</html>
