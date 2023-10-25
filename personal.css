@@ -1,0 +1,19 @@
+.personal {
+    flex: 0 0 350px;
+}
+
+.personal input {
+    width: 100%;
+    padding: 6px 8px;
+    margin-bottom: 10px;
+    background: transparent;
+    border-color: #8b4513;
+    border-radius: 5px;
+}
+
+.personal label {
+    display: block;
+    font-weight: bold;
+    padding: 0 0 4px 0;
+}
+

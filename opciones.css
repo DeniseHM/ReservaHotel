@@ -1,0 +1,31 @@
+.lista-opciones {
+    display: flex;
+    justify-content: space-between;
+}
+
+.opcion {
+    font-weight: bolder;
+    font-size: 10px;
+    text-transform: uppercase;
+    border: 1px solid #8b4513;
+    border-radius: 5px;
+    padding: 10px;
+    flex: 0 0 30%;
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+}
+
+.opcion img {
+    order: 1;
+    height: 20px;
+}
+
+.opcion span {
+    order: 2;
+    display: block;
+}
+
+.opcion input {
+    order: 3;
+}
